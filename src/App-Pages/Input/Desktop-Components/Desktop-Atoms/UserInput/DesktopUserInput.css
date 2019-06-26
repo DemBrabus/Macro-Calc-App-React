@@ -1,0 +1,39 @@
+.DesktopUserInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 40px;
+}
+
+.InputWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+.InputLabel {
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.DesktopInputField {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #8e8e8e;
+  width: 80px;
+  margin-right: 10px;
+  color: #eaeaea;
+  outline: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+/*# sourceMappingURL=DesktopUserInput.css.map */

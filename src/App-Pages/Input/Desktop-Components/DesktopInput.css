@@ -1,0 +1,62 @@
+.DesktopInput {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.DesktopInput-TopSpacer {
+  width: 100%;
+  height: 35px;
+}
+
+.DesktopInput-Backer {
+  width: 100%;
+  height: 100%;
+  background-color: #1d1d1d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.181);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.181);
+}
+
+.DesktopInput-BottomSpacer {
+  width: 100%;
+  height: 35px;
+}
+
+.DesktopInput-Sponsor {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 100;
+  bottom: 0;
+  margin-bottom: 9px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  white-space: nowrap;
+}
+/*# sourceMappingURL=DesktopInput.css.map */
