@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,mBAAmB,CAAC;EAChB,UAAU,EAAE,MAAM;CACrB;;AAED,AAAA,oBAAoB,CAAC;EACjB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;CACnB;;AAED,AAAA,yBAAyB,CAAC;EACrB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAChB,KAAK,EAAE,KAAK;EACZ,UAAU,EAAE,MAAM;EAClB,UAAU,EAAE,IAAI;CACpB",
-    "sources": [
-        "DesktopInputHeader.scss"
-    ],
-    "names": [],
-    "file": "DesktopInputHeader.css"
-}

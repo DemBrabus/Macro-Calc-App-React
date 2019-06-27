@@ -8,60 +8,70 @@ import Results from './App-Pages/Results/Results';
 
 export default class App extends Component {
   constructor(props){
-    super(props)
+    super(props);
     this.state = {
-      Fats: 'Fatty',
-      Carbs: 'Chuncky',
-      Protein: 'Beefy',
-    }
+      Fats: 0,
+      Carbs: 0,
+      Protein: 0,
+      total: 0,
+    };
+      this.updateFats = this.updateFats.bind(this);
+      this.updateCarbs = this.updateCarbs.bind(this);
+      this.updateProtein = this.updateProtein.bind(this);
+      this.updateProtein = this.updateProtein.bind(this);
   }
 
- 
+      updateFats = (evt) => {
+        this.setState({Fats: Number(evt.target.value) });
+        console.log(this.state.Fats);
+        
+      }
+
+       updateCarbs = (evt) => {
+        this.setState({Carbs: Number(evt.target.value) });
+        console.log(this.state.Carbs);
+      }
+
+       updateProtein = (evt) => {
+        this.setState({Protein: Number(evt.target.value) });
+        console.log(this.state.Protein);
+      }
+
+      calculate = (event) => {
+        let macroSum = this.state.Fats + this.state.Carbs + this.state.Protein;
+        this.setState({total: macroSum})
+        console.log(this.state.total);
+      }
+
+
 
       
 
   render() {
 
-      const updateFats = (event) => {
-        // this.setState({Fats: 'Fatty Patty'});
-        // console.log(this.state.Fats);
-        console.log('Clicked');
-      }
-
-       const updateCarbs = (event) => {
-        this.setState({Carbs: event.target.value});
-        console.log(this.state.Carbs);
-      }
-
-       const updateProtein = (event) => {
-        this.setState({Protein: event.target.value});
-        console.log(this.state.Protein);
-      }
-
-  console.log(this.state.Fats);
-  console.log(this.state.Carbs);
-  console.log(this.state.Protein);
+  // console.log(this.state.Fats);
+  // console.log(this.state.Carbs);
+  // console.log(this.state.Protein);
     
 
     return (
 
       <Router>
          <div className="App">
-        
+           
 
            <Switch>
                 <Route path='/' exact render={(props) => <Input {...props} 
-                  updateFats={updateFats} 
-                  updateCarbs={updateCarbs} 
-                  updateProtein={updateProtein}  />} />
+                  updateFats={this.updateFats} 
+                  updateCarbs={this.updateCarbs} 
+                  updateProtein={this.updateProtein}
+                  calculate={this.calculate}  />} />
 
                 {/* <Route path='/' exact component={Input} /> */}
 
                 <Route path='/results' component={Results} />
-
+                
            </Switch>
-
-
         </div>
       </Router>
      

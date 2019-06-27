@@ -25,13 +25,118 @@
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.181);
 }
 
+//Content
+    .DesktopInputHeader {
+    text-align: center;
+    }
+
+    .DesktopInput-Header {
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    .DesktopInput-Description {
+        font-size: 25px;
+        font-weight: 200;
+        width: 600px;
+        text-align: center;
+        margin-top: 3vh;
+    }
+    // ---------------------------------
+
+    .DesktopInputExplanation {
+    text-align: center;
+    margin-top: 6vh;
+    }
+
+    .Explanation-Title {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .Kcal-Breakdown-Wrap {
+        display: flex;
+        justify-content: space-between;
+        width: 750px;
+        margin-top: 3vh;
+    }
+
+    .Kcal-Breakdown {
+        font-size: 16px;
+        font-weight: 200;
+    }
+
+    .Explanation-Recommendation {
+        font-size: 14px;
+        font-weight: 100;
+        color: #969696;
+        margin-top: 3vh;
+
+    }
+    // -----------------------------------
+
+    .DesktopUserInput {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 3vh;
+
+    }
+
+    .InputWrap {
+        display: flex;
+        margin-top:30px;
+    }
+
+    .InputLabel {
+        font-size: 20px;
+        font-weight: 500;
+        margin-right: 10px;
+    }
+
+    .DesktopInputField {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #8e8e8e;width: 80px;
+        margin-right: 10px; 
+        color: #eaeaea;
+        outline: none;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .DesktopSubmit {
+        align-self: center;
+        padding: 7px 50px;
+        margin-top: 5vh;
+        border-radius: 5px;
+        border: none;
+        background-color: #1880B4;
+        color: #eaeaea;
+        font-size: 16px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.228);
+        outline: none;
+    }
+    // -----------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .DesktopInput-BottomSpacer {
     width: 100%;
     height: 35px;
 
-}
-
-.DesktopInput-Sponsor {
+    .DesktopInput-Sponsor {
     position: absolute;
     font-size: 12px;
     font-weight: 100;
@@ -40,4 +145,20 @@
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
+}
+
+}
+
+
+
+@media screen and (max-width: 800px){
+    .DesktopInput {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 600px){
+    .DesktopInput {
+        display: none;
+    }
 }
